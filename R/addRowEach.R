@@ -3,7 +3,7 @@
 #' @param data_frame Dataframe contenant les donnees du excel
 #' @param interval Nombre de lignes avant de rajouter une ligne vide
 #'
-#' @return
+#' @return Renvoi une data.frame avec les lignes vides supplementaires
 #' @export
 #'
 addRowEach = function(data_frame, interval = 4){
