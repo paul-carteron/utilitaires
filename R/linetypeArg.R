@@ -1,14 +1,15 @@
 #' linetypeArg
 #'
+#' @param couleur Choix de la couleur d'affichage
+#'
 #' @importFrom dplyr mutate
 #' @importFrom ggplot2 aes element_text geom_segment ggplot labs scale_linetype_identity scale_x_continuous theme theme_bw
 #' @importFrom rlang .data
 #'
-#' @return Renvoi differents arguments utilisable dans l'argument linetype de ggplot
+#' @return
 #' @export
 #'
-#'
-linetypeArg = function(){
+linetypeArg = function(couleur = "blue"){
    lt <- NULL
    d = data.frame(
       lt = c(
@@ -26,7 +27,8 @@ linetypeArg = function(){
       mutate(lt = factor(lt,levels = .data$lt))
 
    graph = ggplot() +
-      geom_segment(data=d, mapping=aes(x=0, xend=1, y=lt, yend=lt, linetype=lt), size =1)+
+      geom_segment(data=d, mapping=aes(x=0, xend=1, y=lt, yend=lt, linetype=lt),
+                   size =1, color = couleur)+
       scale_x_continuous(name="", limits=c(0,1), breaks = NULL) +
       scale_linetype_identity() +
       labs(y = "",

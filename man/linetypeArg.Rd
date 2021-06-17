@@ -4,10 +4,13 @@
 \alias{linetypeArg}
 \title{linetypeArg}
 \usage{
-linetypeArg()
+linetypeArg(couleur = "blue")
+}
+\arguments{
+\item{couleur}{Choix de la couleur d'affichage}
 }
 \value{
-Renvoi differents arguments utilisable dans l'argument linetype de ggplot
+Renvoi differentes valeurs utilisables dans l'argument linetype de ggplot
 }
 \description{
 linetypeArg
