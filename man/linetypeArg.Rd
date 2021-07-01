@@ -10,7 +10,7 @@ linetypeArg(couleur = "blue")
 \item{couleur}{Choix de la couleur d'affichage}
 }
 \value{
-Renvoi differentes valeurs utilisables dans l'argument linetype de ggplot
+
 }
 \description{
 linetypeArg
