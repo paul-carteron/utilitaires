@@ -6,7 +6,7 @@
 #' @importFrom ggplot2 aes element_text geom_segment ggplot labs scale_linetype_identity scale_x_continuous theme theme_bw
 #' @importFrom rlang .data
 #'
-#' @return
+#' @return graph montrant les differentes possibilites
 #' @export
 #'
 linetypeArg = function(couleur = "blue"){

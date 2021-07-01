@@ -10,7 +10,7 @@ linetypeArg(couleur = "blue")
 \item{couleur}{Choix de la couleur d'affichage}
 }
 \value{
-
+graph montrant les differentes possibilites
 }
 \description{
 linetypeArg

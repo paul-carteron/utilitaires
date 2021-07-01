@@ -2,9 +2,9 @@
 #'
 #' @param couleur Choix de la couleur d'affichage
 #'
-#' @importFrom gplot2 aes element_text ggplot labs theme theme_bw element_blank geom_point geom_text scale_shape_manual
+#' @importFrom ggplot2 aes element_text ggplot labs theme theme_bw element_blank geom_point geom_text scale_shape_manual
 #'
-#' @return
+#' @return graph montrant les differentes possibilites
 #' @export
 #'
 shapeArg = function(couleur = "blue"){
