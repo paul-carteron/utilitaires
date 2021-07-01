@@ -18,6 +18,7 @@ simcopWeightConvert = function(..., nbClasse = 5){
    multipleRes = lapply(multipleRes, function(x){paste0("[",paste0(x,collapse = ","),"]")})
    res = paste(unlist(multipleRes), collapse = "\n")
 
+   writeClipboard(res)
    return(res = cat(res))
 
 }
